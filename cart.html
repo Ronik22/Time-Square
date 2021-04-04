@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Square | CART</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Josefin+Sans&family=Montserrat&family=Poppins&family=Ubuntu&family=Righteous&family=Cormorant:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section  id="simwalp">
+
+        <!-- Navbar -->
+
+        <nav class="navBar navBar2">
+            <img id="navLogo" src="images/web logo.svg" alt="logo">
+            <button class="hamburger" id="hamburgerMenu" >
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="navUl" class="navUl">
+                <li id="searchbar" >
+                    <input type="text" placeholder="Search..">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li class="hiddennav hnv1"><a href="./cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                <li class="hiddennav hnv2"><a class="lmBtn" id="lmBtn2"><i class="fas fa-user"></i></a></li>
+                <li id="smallhidnav"><button class="lmBtn" id="lmBtn"><i class="far fa-user"></i>&nbsp Account</button></li>
+            </ul>
+        </nav>
+        <div id="sidenavext"><a href="/cart.html"><i style="color: #f3f0f1;" class="fas fa-shopping-cart"></i></a></div>
+        
+        <!-- Section 1 -->
+
+        <section id="cartpage" class="reveal2">
+            <span class="spg1heading" style="color: black;"><i style="color: red;" class="fas fa-shopping-cart"></i> CART </span>
+        </section>
+
+    </section>
+
+
+    <!-- Login Modal -->
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="tab">
+                <button class="tablinks" onclick="openModal2(event, 'login')" id="defaultOpen">Log in</button>
+                <button class="tablinks" onclick="openModal2(event, 'signup')">Sign up</button>
+                <span class="close">&times;</span>
+            </div>
+              
+              <div id="login" class="tabcontent">
+                <input class="forminp" type="text" placeholder="Enter Username" name="uname" required>
+                <input class="forminp" type="password" placeholder="Enter Password" name="pwd" required>
+
+                <button class="loginbutton" type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+              
+              <div id="signup" class="tabcontent">
+                <input class="forminp" type="email" placeholder="Enter Email" name="email" required>
+                <input class="forminp" type="password" placeholder="Enter Password" name="pwd" required>
+                <input class="forminp" type="password" placeholder="Repeat Password" name="rpt-pwd" required>
+                <p style=" margin: 10px 0px 10px 2px;">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                <button class="loginbutton" type="submit">Sign up</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+        </div>
+    </div>
+
+
+    <!-- Cart -->
+
+    <div class="shpcart">
+        <table id="shptable">
+            <tr>
+                <th class="thsplft">Product</th>
+                <th>Price</th> 
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td class="shpimg">
+                    <img src="/images/w25.jpg" alt="">
+                    <div>The Guardian (Limited Edition)</div>
+                </td>
+                <td>$19.99</td>
+                <td>
+                    <input class="tdinp" type="number" value="2" min="1" max="10">
+                </td>
+                <td>$99.99</td>
+            </tr>
+            <tr>
+                <td class="shpimg">
+                    <img src="/images/w16.jpg" alt="">
+                    <div>Dark Knight</div>
+                </td>
+                <td>$19.99</td>
+                <td>
+                    <input class="tdinp" type="number" value="1" min="1" max="10">
+                </td>
+                <td>$99.99</td>
+            </tr>
+            <tr>
+                <td class="shpimg">
+                    <img src="/images/w3.jpg" alt="">
+                    <div>Explorer</div>
+                </td>
+                <td>$19.99</td>
+                <td>
+                    <input class="tdinp" type="number" value="3" min="1" max="10">
+                </td>
+                <td>$99.99</td>
+            </tr>
+            <tr>
+                <td class="thsplft">
+                    
+                </td>
+                <td></td>
+                <td>
+                    6
+                </td>
+                <td>$249.99</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="shpcheckout">
+        <h3>Order Summary:</h3>
+        <hr style="margin: 20px 0px 30px 0px;">
+        <span>&nbsp&#9745 Item Subtotal: $249.99</span>
+        <span>&nbsp&#9745 Discount: $49</span>
+        <span>&nbsp&#9745 Delivery Charges: FREE</span> 
+        <span>&nbsp&#9745 Amount to be paid: $200.99</span>
+        <button>Checkout</button>
+    </div>
+    
+
+    <script src="./jquery.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

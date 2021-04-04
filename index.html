@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Square | eCommerce</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Josefin+Sans&family=Montserrat&family=Poppins&family=Ubuntu&family=Righteous&family=Cormorant:wght@700&display=swap&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <div  id="simwalp">
+
+        <!-- Navbar -->
+
+        <nav class="navBar">
+            <img id="navLogo" src="images/web logo.svg" alt="logo">
+            <button class="hamburger" id="hamburgerMenu" >
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="navUl" class="navUl">
+                <li id="searchbar" ><input type="text" placeholder="Search.."><button type="submit"><i class="fas fa-search"></i></button></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li class="hiddennav hnv1"><a href="/cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                <li class="hiddennav hnv2"><a class="lmBtn" id="lmBtn2"><i class="fas fa-user"></i></a></li>
+                <li id="smallhidnav"><button class="lmBtn" id="lmBtn"><i class="far fa-user"></i>&nbsp Account</button></li>
+            </ul>
+        </nav>
+        <div id="sidenavext"><a href="/cart.html"><i style="color: #f3f0f1;" class="fas fa-shopping-cart"></i></a></div>
+        
+        <!-- Section 1 -->
+
+        <section id="page1">
+            <div class="container1 fadeRight">
+                <span class="reveal" style="font-size: 2.3em !important; color:#FD0100; font-family:  'Playfair Display';">Merging Style <span style="color: #000; font-family: 'Playfair Display';">with Elegance</span></span> <br><br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam reprehenderit sequi reiciendis dolorum? Libero accusamus corporis odit tempore facere id?
+                <br><br>
+                <a href="/shop.html" id="shopbuttonpg1">Shop Now</a>
+            </div>
+            <div class="container2 scaleUp">
+                <img class="fadeLeft" src="images/Watch logo.svg" alt="image">
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Login Modal -->
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="tab">
+                <button class="tablinks" onclick="openModal2(event, 'login')" id="defaultOpen">Log in</button>
+                <button class="tablinks" onclick="openModal2(event, 'signup')">Sign up</button>
+                <span class="close">&times;</span>
+            </div>
+              
+              <div id="login" class="tabcontent">
+                <input class="forminp" type="text" placeholder="Enter Username" name="uname" required>
+                <input class="forminp" type="password" placeholder="Enter Password" name="pwd" required>
+
+                <button class="loginbutton" type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+              
+              <div id="signup" class="tabcontent">
+                <input class="forminp" type="email" placeholder="Enter Email" name="email" required>
+                <input class="forminp" type="password" placeholder="Enter Password" name="pwd" required>
+                <input class="forminp" type="password" placeholder="Repeat Password" name="rpt-pwd" required>
+                <p style=" margin: 10px 0px 10px 2px;">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                <button class="loginbutton" type="submit">Sign up</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+        </div>
+    </div>
+
+
+    <!-- photo gallery -->
+
+    <div class="pgrow">
+        <div class="pgcolumn">
+            <div class="animation-element in-view"><img src="images/shop_page/photo_gallery/pg1l.jpg"></div>
+            <div class="animation-element in-view"><img src="images/shop_page/photo_gallery/pg2b.jpg"></div>
+            <div class="animation-element in-view"><img src="images/shop_page/photo_gallery/pg5w.jpg"></div>
+        </div>
+        <div class="pgcolumn pgshift">
+            <div class="animation-element in-view"><img src="images/shop_page/photo_gallery/pg10w.jpg"></div>
+            <div class="animation-element in-view"><img src="images/shop_page/photo_gallery/pg9l.jpg"></div>
+            <div class="animation-element in-view"><img src="images/shop_page/photo_gallery/pg3b.jpg"></div>
+        </div>
+        <div class="pgcolumn">
+            <div class="animation-element in-view"><img src="images/shop_page/photo_gallery/pg6b.jpg"></div>
+            <div class="animation-element in-view"><img src="images/shop_page/photo_gallery/pg11w.jpg"></div>
+            <div class="animation-element in-view"><img src="images/shop_page/photo_gallery/pg8l.jpg"></div>
+        </div>
+    </div>
+
+
+    <!-- Section 2 -->
+
+    <section class="sectionblock">
+        <p id="s2heading">New Arrivals</p>
+        <section class="pcardContainer">
+            <div class="card">
+                <div class="crdimghvr"><img src="images/w6.jpg" alt="watch" ></div>
+                <h1>Day-Date</h1>
+                <p class="price">$9.99</p>
+                <p>The ultimate watch of prestige</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+                <div class="crdimghvr"><img src="images/w1.jpg" alt="watch" ></div>
+                <h1>Sky-Master</h1>
+                <p class="price">$14.68</p>
+                <p>A homage to aviation</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+                <div class="crdimghvr"><img src="images/w3.jpg" alt="watch" ></div>
+                <h1>Dark-Knight</h1>
+                <p class="price">$20.50</p>
+                <p>The guardian</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+                <div class="crdimghvr"><img src="images/w13.jpg" alt="watch" ></div>
+                <h1>Explorer</h1>
+                <p class="price">$19.99</p>
+                <p>Scaling new heights</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+                <div class="crdimghvr"><img src="images/w6.jpg" alt="watch" ></div>
+                <h1>Day-Date</h1>
+                <p class="price">$60.00</p>
+                <p>The ultimate watch of prestige</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+                <div class="crdimghvr"><img src="images/w3.jpg" alt="watch" ></div>
+                <h1>Dark-Knight</h1>
+                <p class="price">$20.19</p>
+                <p>The guardian</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <br><br>
+        </section>
+    </section>
+
+
+    <!-- Section 3 -->
+
+    <section class="sectionblock">
+        <p id="s3heading">Popular Items</p>
+        <section class="pcardContainer">
+            <div class="card">
+                <div class="crdimghvr"><img src="images/w6.jpg" alt="watch" ></div>
+                <h1>Day-Date</h1>
+                <p class="price">$19.99</p>
+                <p>The ultimate watch of prestige</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+                <div class="crdimghvr"><img src="images/w1.jpg" alt="watch" ></div>
+                <h1>Sky-Master</h1>
+                <p class="price">$29.99</p>
+                <p>A homage to aviation</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+                <div class="crdimghvr"><img src="images/w3.jpg" alt="watch" ></div>
+                <h1>Dark-Knight</h1>
+                <p class="price">$14.99</p>
+                <p>The guardian</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+                <div class="crdimghvr"><img src="images/w13.jpg" alt="watch" ></div>
+                <h1>Explorer</h1>
+                <p class="price">$20.99</p>
+                <p>Scaling new heights</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+                <div class="crdimghvr"><img src="images/w6.jpg" alt="watch" ></div>
+                <h1>Day-Date</h1>
+                <p class="price">$19.99</p>
+                <p>The ultimate watch of prestige</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+                <div class="crdimghvr"><img src="images/w3.jpg" alt="watch" ></div>
+                <h1>Dark-Knight</h1>
+                <p class="price">$49.99</p>
+                <p>The guardian</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="vmpbutton"><button>View More Products</button></div>
+        </section>
+    </section>
+
+
+    <!-- featured video -->
+
+    <div align="center" >
+        <br><br>
+        <iframe width="95%" height="500" src="https://www.youtube.com/embed/8R1ubtHT5-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <!-- 3 cards -->
+
+    <div class="tcrds">
+        <div id="tcrd1">
+            <div class="tcrdimg">
+                <i class="fas fa-truck"></i>
+            </div>
+            <span style="padding-bottom: 12px; font-weight:500; font-size: larger;">Free Shipping</span>
+            <span style="color: rgba(255, 255, 255, 0.7);">Lorem ipsum dolor sit, amet </span>
+        </div>
+        <div id="tcrd2">
+            <div class="tcrdimg">
+                <i class="fas fa-money-check-alt"></i>
+            </div>
+            <span style="padding-bottom: 12px; font-weight:500; font-size: larger;">Secure Payment</span>
+            <span style="color: rgba(255, 255, 255, 0.7);">Lorem ipsum dolor sit, amet </span>
+        </div>
+        <div id="tcrd3">
+            <div class="tcrdimg">
+                <i class="fas fa-exchange-alt"></i>
+            </div>
+            <span style="padding-bottom: 12px; font-weight:500; font-size: larger;">Easy Return</span>
+            <span style="color: rgba(255, 255, 255, 0.7);">Lorem ipsum dolor sit, amet </span>
+        </div>
+    </div>
+
+
+    <!-- Contact form -->
+
+    <div class="container">
+        <div class="cfttab1">
+            <div id="ftrabt">
+                <span>About</span><br><br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est vel quam numquam maxime pariatur minus libero reprehenderit veritatis iste dolores?
+            </div>
+            <br><br>
+            <div><i class="fas fa-map-marker-alt"></i> &nbsp&nbsp 379 Hudson St, New York, US</div><br>
+            <div><i class="fas fa-phone-alt"></i>&nbsp&nbsp +21-3315-856987</div><br>
+            <div><i class="fas fa-envelope"></i>&nbsp&nbsp timeSquare@example.com</div>
+            <br><br>
+            <div id="ftrsocial">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-google-plus-g"></i>
+            </div>
+        </div>
+        <div class="cfttab2">
+            <span id="gitctf">Get in Touch</span>
+            <form action="/action_page.php">
+                <input type="text" id="fname" name="firstname" placeholder="First Name">
+                <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                <input type="text" id="email" name="email" placeholder="Email ID">
+                <textarea id="subject" name="subject" placeholder="Write your message here.." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+    <script src="./jquery.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
